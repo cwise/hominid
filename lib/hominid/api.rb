@@ -40,6 +40,10 @@ module Hominid
       error.faultCode == -32601 ? false : true 
     end
     
+    def http_last_response
+      @chimpApi.http_last_response
+    end
+    
     private
 
     def camelize_api_method_name(str)
